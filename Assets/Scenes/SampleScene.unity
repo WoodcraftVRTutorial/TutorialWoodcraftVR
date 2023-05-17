@@ -437,7 +437,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &592255457
 Transform:
   m_ObjectHideFlags: 0
@@ -479,8 +479,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 283726126}
-  m_Colliders:
-  - {fileID: 592255458}
+  m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -2420,7 +2419,7 @@ PrefabInstance:
     - target: {fileID: 7546836132494360351, guid: 44c5de2fff6a54640a2cc47c18c58376,
         type: 3}
       propertyPath: m_Colliders.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7546836132494360351, guid: 44c5de2fff6a54640a2cc47c18c58376,
         type: 3}
