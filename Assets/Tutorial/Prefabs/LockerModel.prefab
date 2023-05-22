@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4854472203873967884}
   - component: {fileID: 4854472203873967882}
   - component: {fileID: 4854472203873967881}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: LockerDeur
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128,7 +128,7 @@ HingeJoint:
   m_Anchor: {x: -0.18, y: 0.12, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.45211315, y: 0.11999929, z: 0.1783557}
+  m_ConnectedAnchor: {x: -0.17999995, y: 0.120000005, z: 0.21572948}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -170,7 +170,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 4294967295
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_CustomReticle: {fileID: 0}
@@ -394,7 +394,7 @@ MeshCollider:
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 2414751425368093432, guid: ba9e2bf5fd13b5d4a935b48d7d10b07f, type: 3}
+  m_Mesh: {fileID: -8742997718405800017, guid: a38e9717c903c2844817ccd2901de1ad, type: 3}
 --- !u!1 &7909427931627489045
 GameObject:
   m_ObjectHideFlags: 0
