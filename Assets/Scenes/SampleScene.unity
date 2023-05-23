@@ -3026,6 +3026,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Screwdriver
       objectReference: {fileID: 0}
+    - target: {fileID: 5073089592896872538, guid: 4d1915dfbb98d314cb1bc3691dd9f35a,
+        type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5073089592896872539, guid: 4d1915dfbb98d314cb1bc3691dd9f35a,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5073089592896872540, guid: 4d1915dfbb98d314cb1bc3691dd9f35a,
         type: 3}
       propertyPath: m_InteractionManager
