@@ -10,16 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f1dc2a8c375c6a541b9cc10f07d8aeac, type: 3}
-  m_Name: WelcomePanel
+  m_Name: TestPage
   m_EditorClassIdentifier: 
-  PageText: Welcome!
+  PageText: Testje
   PageLanguage: 0
   Clip: {fileID: 0}
   AutoPlay: 0
   ImagePool: []
-  ButtonPool:
-  - Button: {fileID: 1117921490436854263, guid: b026e7bbe7ab0534aaebdf1cc57c9f9d,
-      type: 3}
-    Position: {x: 0.5, y: 0.5}
-    Scale: {x: 1, y: 1}
+  ButtonPool: []
   SfxPool: []
