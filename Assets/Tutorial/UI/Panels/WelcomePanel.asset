@@ -19,14 +19,10 @@ MonoBehaviour:
   ImagePool:
   - Image: {fileID: 21300000, guid: 0b1a38d3085e0504687be6213aa3b9d9, type: 3}
     Position: {x: 0, y: 0}
-    Scale: {x: 1, y: 1}
+    Scale: {x: 10, y: 10}
     Rotation: 0
     LocalizeImage: 0
     LocalizedKey: 
     LocalizedTable: 
-  ButtonPool:
-  - Button: {fileID: 1117921490436854263, guid: b026e7bbe7ab0534aaebdf1cc57c9f9d,
-      type: 3}
-    Position: {x: 0.5, y: 0.5}
-    Scale: {x: 1, y: 1}
+  ButtonPool: []
   SfxPool: []
