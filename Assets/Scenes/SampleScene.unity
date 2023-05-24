@@ -3217,6 +3217,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &1411664799 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5073089592896841470, guid: 4d1915dfbb98d314cb1bc3691dd9f35a,
+    type: 3}
+  m_PrefabInstance: {fileID: 5073089592878528071}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1519570600
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4040,6 +4046,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trigger: {fileID: 3376824592847806715}
   textPanel: {fileID: 656684517}
+  tool01: {fileID: 1411664799}
 --- !u!1001 &1772430797
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5075,16 +5082,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Screwdriver
-      objectReference: {fileID: 0}
-    - target: {fileID: 5073089592896841470, guid: 4d1915dfbb98d314cb1bc3691dd9f35a,
-        type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5073089592896841470, guid: 4d1915dfbb98d314cb1bc3691dd9f35a,
-        type: 3}
-      propertyPath: m_TagString
-      value: Tool01
       objectReference: {fileID: 0}
     - target: {fileID: 5073089592896872540, guid: 4d1915dfbb98d314cb1bc3691dd9f35a,
         type: 3}
