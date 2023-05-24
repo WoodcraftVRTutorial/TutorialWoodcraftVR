@@ -16,6 +16,13 @@ MonoBehaviour:
   PageLanguage: 0
   Clip: {fileID: 0}
   AutoPlay: 0
-  ImagePool: []
+  ImagePool:
+  - Image: {fileID: 21300000, guid: 8cdae2f83d1223145816ec86d0d022e7, type: 3}
+    Position: {x: 0, y: 0}
+    Scale: {x: 16, y: 10}
+    Rotation: 0
+    LocalizeImage: 0
+    LocalizedKey: 
+    LocalizedTable: 
   ButtonPool: []
   SfxPool: []
