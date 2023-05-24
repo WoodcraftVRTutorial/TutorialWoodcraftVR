@@ -19,7 +19,7 @@ MonoBehaviour:
   ImagePool:
   - Image: {fileID: 21300000, guid: 18a2d1e513de9134cbddb49b428422c6, type: 3}
     Position: {x: 0, y: 0}
-    Scale: {x: 16, y: 0}
+    Scale: {x: 16, y: 10}
     Rotation: 0
     LocalizeImage: 0
     LocalizedKey: 
