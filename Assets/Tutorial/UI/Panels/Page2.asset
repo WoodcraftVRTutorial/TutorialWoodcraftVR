@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f1dc2a8c375c6a541b9cc10f07d8aeac, type: 3}
-  m_Name: TestPage
+  m_Name: Page2
   m_EditorClassIdentifier: 
-  PageText: Testje
+  PageText: 
   PageLanguage: 0
   Clip: {fileID: 0}
   AutoPlay: 0
