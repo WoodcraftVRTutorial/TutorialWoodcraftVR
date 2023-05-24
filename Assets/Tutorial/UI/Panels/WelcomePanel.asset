@@ -25,7 +25,8 @@ MonoBehaviour:
     LocalizedKey: 
     LocalizedTable: 
   ButtonPool:
-  - Button: {fileID: 0}
-    Position: {x: 0, y: 0}
-    Scale: {x: 0, y: 0}
+  - Button: {fileID: 6044703761881597122, guid: 1c5499ae2cccaef4a8af0877a3216919,
+      type: 3}
+    Position: {x: 675, y: -342}
+    Scale: {x: 0.6, y: 0.6}
   SfxPool: []
