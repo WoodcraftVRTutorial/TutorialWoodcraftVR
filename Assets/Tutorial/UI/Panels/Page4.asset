@@ -17,7 +17,7 @@ MonoBehaviour:
   Clip: {fileID: 0}
   AutoPlay: 0
   ImagePool:
-  - Image: {fileID: 21300000, guid: 242c3826bbde81643b771584a3d0ba88, type: 3}
+  - Image: {fileID: 21300000, guid: 575b9b86f6afe3b478373a366dfdcaa2, type: 3}
     Position: {x: 0, y: 0}
     Scale: {x: 16, y: 10}
     Rotation: 0
