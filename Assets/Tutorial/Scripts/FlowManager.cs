@@ -13,6 +13,7 @@ public class FlowManager : MonoBehaviour
     [SerializeField] GameObject tool01;
     [SerializeField] GameObject particlePrefab;
     [SerializeField] GameObject particleSpawnPoint;
+    [SerializeField] GameObject teleportTarget;
 
     private Vector3 tool01StartPos;
     private Outline tool01Outline;
@@ -39,6 +40,11 @@ public class FlowManager : MonoBehaviour
             case 2:
                 tool01Outline.enabled = true;
                 break;
+            case 3:
+                teleportTarget.SetActive(true);
+                break;
+            case 4:
+                break;
         }
     }
 
@@ -53,6 +59,16 @@ public class FlowManager : MonoBehaviour
         else if (textPanel.CurrentPageIndex < 2)
         {
             tool01.transform.position = tool01StartPos;
+        }
+    }
+
+    public void FinishTask02()
+    {
+        if (textPanel.CurrentPageIndex == 3)
+        {
+            teleportTarget.SetActive(false);
+            textPanel.NextPage();
+            SpawnParticles();
         }
     }
 

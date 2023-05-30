@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Indicator
   - Tool01
+  - Rig
   layers:
   - Default
   - TransparentFX
