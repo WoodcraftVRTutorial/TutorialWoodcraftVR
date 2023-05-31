@@ -8,15 +8,14 @@ public class TeleportTarget : MonoBehaviour
     public UnityEvent onTargetReached;
     public GameObject targetIndicator;
     public GameObject rig;
+    [SerializeField] private float targetRange = 1.1f;
 
     private void Update()
     {
         float distanceToRig = Vector3.Distance(transform.position, rig.transform.position);
-        Debug.Log(distanceToRig);
-        
-        if(distanceToRig < 1f)
-        {
-            
+      
+        if(distanceToRig < targetRange)
+        {          
             onTargetReached.Invoke();
             targetIndicator.SetActive(false);
         }

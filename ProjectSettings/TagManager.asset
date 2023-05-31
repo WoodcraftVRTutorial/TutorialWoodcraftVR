@@ -7,6 +7,7 @@ TagManager:
   - Indicator
   - Tool01
   - Rig
+  - Hammer
   layers:
   - Default
   - TransparentFX
