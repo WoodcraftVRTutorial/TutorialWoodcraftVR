@@ -2120,7 +2120,7 @@ MonoBehaviour:
         m_CallState: 2
   targetIndicator: {fileID: 1558202009}
   rig: {fileID: 877051739}
-  targetRange: 1.1
+  targetRange: 1.2
 --- !u!4 &829965784
 Transform:
   m_ObjectHideFlags: 0
