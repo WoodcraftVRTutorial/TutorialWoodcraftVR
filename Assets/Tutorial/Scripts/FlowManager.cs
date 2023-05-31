@@ -4,6 +4,8 @@ using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.PlayerLoop;
+using UnityEngine.XR.Interaction.Toolkit;
 using static UnityEngine.ParticleSystem;
 
 public class FlowManager : MonoBehaviour
@@ -14,6 +16,8 @@ public class FlowManager : MonoBehaviour
     [SerializeField] GameObject particlePrefab;
     [SerializeField] GameObject particleSpawnPoint;
     [SerializeField] GameObject teleportTarget;
+    [SerializeField] GameObject sawHologram;
+    [SerializeField] SawTask saw;
 
     private Vector3 tool01StartPos;
     private Outline tool01Outline;
@@ -22,7 +26,6 @@ public class FlowManager : MonoBehaviour
     {
         tool01StartPos = tool01.transform.position;
         tool01StartPos.y += 0.1f;
-
         tool01.TryGetComponent<Outline>(out tool01Outline);
     }
 
@@ -44,8 +47,11 @@ public class FlowManager : MonoBehaviour
                 teleportTarget.SetActive(true);
                 break;
             case 4:
+                sawHologram.SetActive(true);
                 break;
         }
+
+        Debug.Log(textPanel.CurrentPageIndex);
     }
 
     public void FinishTask01()
@@ -70,6 +76,16 @@ public class FlowManager : MonoBehaviour
             textPanel.NextPage();
             SpawnParticles();
         }
+    }
+
+    public void FinishTask03()
+    {
+        if(textPanel.CurrentPageIndex == 4)
+        {
+            sawHologram.SetActive(false);
+            textPanel.NextPage();
+            SpawnParticles();
+        }       
     }
 
     private void SpawnParticles()
