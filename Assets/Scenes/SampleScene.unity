@@ -1960,6 +1960,19 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5073089592878528071}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1411664813
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411664799}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5455086, y: 2.7324967, z: 0.5455087}
+  m_Center: {x: 0.0000018626451, y: 0.49722758, z: 0.0000020675568}
 --- !u!1001 &1465964908
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3070,6 +3083,19 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!65 &33686427978430079
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425865194240649}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5243685, y: 3.149019, z: 0.8995038}
+  m_Center: {x: 4.7016563e-14, y: -0.6030597, z: -0.0029156322}
 --- !u!1001 &662108070320352942
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3151,6 +3177,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1910071204}
     m_Modifications:
+    - target: {fileID: 2509527313882780247, guid: 255b3dacce6b06941bc9586149c58425,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2509527313882780248, guid: 255b3dacce6b06941bc9586149c58425,
         type: 3}
       propertyPath: m_InteractionManager
@@ -3324,6 +3355,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5073089592896872538, guid: 4d1915dfbb98d314cb1bc3691dd9f35a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5073089592896872540, guid: 4d1915dfbb98d314cb1bc3691dd9f35a,
         type: 3}
