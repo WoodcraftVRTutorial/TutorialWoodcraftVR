@@ -9,6 +9,7 @@ TagManager:
   - Rig
   - Hammer
   - Floor
+  - Boundary
   layers:
   - Default
   - TransparentFX

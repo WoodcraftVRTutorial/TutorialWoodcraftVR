@@ -14,6 +14,10 @@ GameObject:
   - component: {fileID: 5073089592896872539}
   - component: {fileID: 5073089592896872540}
   - component: {fileID: 5073089592896872538}
+  - component: {fileID: 1411664813}
+  - component: {fileID: 1411664806}
+  - component: {fileID: 1411664814}
+  - component: {fileID: 4998890542523683589}
   m_Layer: 3
   m_Name: Screwdriver
   m_TagString: Tool01
@@ -238,8 +242,63 @@ MeshCollider:
   m_GameObject: {fileID: 5073089592896841470}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: e73d18d15c38bb34489906d9df3f0d9a, type: 3}
+--- !u!65 &1411664813
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5073089592896841470}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5455086, y: 2.7324967, z: 0.5455087}
+  m_Center: {x: 0.0000018626451, y: 0.49722758, z: 0.0000020675568}
+--- !u!114 &1411664806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5073089592896841470}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 0.64832205, b: 0, a: 1}
+  outlineWidth: 8
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!114 &1411664814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5073089592896841470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cbe2b6a4f9395f458d54616447f8645, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4998890542523683589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5073089592896841470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b455b93a9c45f241a0b5d328cc2b682, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

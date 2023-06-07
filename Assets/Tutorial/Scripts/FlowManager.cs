@@ -18,7 +18,7 @@ public class FlowManager : MonoBehaviour
     [SerializeField] GameObject particleSpawnPoint;
     [SerializeField] GameObject teleportTarget;
     [SerializeField] GameObject sawHologram;
-    [SerializeField] MeshRenderer sawHologramRenderer;
+    MeshRenderer sawHologramRenderer;
     [SerializeField] SawTask saw;
 
     private Vector3 tool01StartPos;

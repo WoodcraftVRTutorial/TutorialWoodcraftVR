@@ -14,9 +14,12 @@ GameObject:
   - component: {fileID: 2509527313882780249}
   - component: {fileID: 2509527313882780248}
   - component: {fileID: 2509527313882780247}
-  m_Layer: 0
+  - component: {fileID: 33686427978430079}
+  - component: {fileID: 33686427978430078}
+  - component: {fileID: 1513965378526965938}
+  m_Layer: 3
   m_Name: Hammer
-  m_TagString: Untagged
+  m_TagString: Hammer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,7 +33,7 @@ Transform:
   m_GameObject: {fileID: 2510388570663112505}
   m_LocalRotation: {x: 0.115105346, y: 0.115105346, z: 0.6976752, w: 0.6976752}
   m_LocalPosition: {x: 1.8991394, y: 1.4567, z: -2.287}
-  m_LocalScale: {x: 0.060817033, y: 0.060817033, z: 0.060817033}
+  m_LocalScale: {x: 0.060817033, y: 0.060817033, z: 0.06081704}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -238,8 +241,51 @@ MeshCollider:
   m_GameObject: {fileID: 2510388570663112505}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 919567615dc45604a9469073a0b423ba, type: 3}
+--- !u!65 &33686427978430079
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2510388570663112505}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5243685, y: 3.149019, z: 0.8995038}
+  m_Center: {x: 4.7016563e-14, y: -0.6030597, z: -0.0029156322}
+--- !u!114 &33686427978430078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2510388570663112505}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!114 &1513965378526965938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2510388570663112505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b455b93a9c45f241a0b5d328cc2b682, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

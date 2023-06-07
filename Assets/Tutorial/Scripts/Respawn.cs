@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RespawnOnFloor : MonoBehaviour
+public class Respawn : MonoBehaviour
 {
     Vector3 _startPosition;
     Quaternion _startRotation;
@@ -16,18 +16,23 @@ public class RespawnOnFloor : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log($"Collision with {collision.gameObject.name}");
         if (collision.gameObject.CompareTag("Floor"))
         {
-            StartCoroutine(Respawn());
-            Debug.Log("Respawning in 2 seconds");
+            StartCoroutine(RespawnObject());
         }
     }
 
-    IEnumerator Respawn()
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Boundary"))
+        {
+            StartCoroutine(RespawnObject());
+        }
+    }
+
+    IEnumerator RespawnObject()
     {
         yield return new WaitForSeconds(2);
-        Debug.Log("Respawning now!");
         this.transform.position = _startPosition;
         this.transform.rotation = _startRotation;
     }
