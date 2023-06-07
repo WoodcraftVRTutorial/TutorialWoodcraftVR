@@ -8,6 +8,7 @@ TagManager:
   - Tool01
   - Rig
   - Hammer
+  - Floor
   layers:
   - Default
   - TransparentFX
