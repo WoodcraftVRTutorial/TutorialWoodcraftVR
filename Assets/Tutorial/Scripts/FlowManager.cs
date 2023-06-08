@@ -86,10 +86,6 @@ public class FlowManager : MonoBehaviour
             textPanel.NextPage();
             SpawnParticles();
         }
-        else if (textPanel.CurrentPageIndex < 2)
-        {
-            tool01.transform.position = tool01StartPos;
-        }
     }
 
     public void FinishToolboxTask()
