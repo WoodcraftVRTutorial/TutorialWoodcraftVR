@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 4652787095855433255}
   m_Layer: 3
   m_Name: Saw
-  m_TagString: Untagged
+  m_TagString: Saw
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -256,3 +256,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b455b93a9c45f241a0b5d328cc2b682, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectRespawned:
+    m_PersistentCalls:
+      m_Calls: []

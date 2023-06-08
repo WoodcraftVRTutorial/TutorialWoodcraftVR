@@ -1,11 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.EventSystems;
+
 
 public class Respawn : MonoBehaviour
 {
     Vector3 _startPosition;
     Quaternion _startRotation;
+    public UnityEvent objectRespawned;
 
     // Start is called before the first frame update
     void Start()
@@ -35,5 +39,6 @@ public class Respawn : MonoBehaviour
         yield return new WaitForSeconds(2);
         this.transform.position = _startPosition;
         this.transform.rotation = _startRotation;
+        objectRespawned.Invoke();
     }
 }

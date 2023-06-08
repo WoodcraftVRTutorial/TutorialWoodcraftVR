@@ -13,16 +13,19 @@ public class FlowManager : MonoBehaviour
     [SerializeField] CheckTrigger trigger;
     [SerializeField] NormalTextPanel textPanel;
     [SerializeField] GameObject tool01;
+    [SerializeField] GameObject saw;
     [SerializeField] GameObject hammer;
     [SerializeField] GameObject particlePrefab;
     [SerializeField] GameObject particleSpawnPoint;
     [SerializeField] GameObject teleportTarget;
     [SerializeField] GameObject sawHologram;
     MeshRenderer sawHologramRenderer;
-    [SerializeField] SawTask saw;
+    [SerializeField] SawTask sawBlade;
 
     private Vector3 tool01StartPos;
     private Outline tool01Outline;
+
+    private Outline sawOutline;
 
     private Vector3 hammerStartPos;
     private Outline hammerOutline;
@@ -39,6 +42,8 @@ public class FlowManager : MonoBehaviour
         sawHologram.TryGetComponent<MeshRenderer>(out sawHologramRenderer);
         sawHologramRenderer.enabled = false;
 
+        saw.TryGetComponent<Outline>(out sawOutline);
+
         hammerStartPos = hammer.transform.position;
         hammerStartPos.y += 0.1f;
         hammer.TryGetComponent<Outline>(out hammerOutline);
@@ -52,32 +57,34 @@ public class FlowManager : MonoBehaviour
         {
             case 0:
                 break;
-
             case 1:
                 break;
-
             case 2:
                 tool01Outline.enabled = true;
                 break;
-            case 3:
-                teleportTarget.SetActive(true);
+            case 3:             
                 break;
             case 4:
-                sawHologramRenderer.enabled = true;
+                teleportTarget.SetActive(true);
                 break;
             case 5:
+                sawHologramRenderer.enabled = true;
+                break;
+            case 6:  
+                sawOutline.enabled = true;
+                break;
+            case 7:
                 hammerOutline.enabled = true;
                 break;
         }
     }
 
-    public void FinishTask01()
+    public void FinishRespawnTask()
     {
         if (textPanel.CurrentPageIndex == 2)
         {
             textPanel.NextPage();
             SpawnParticles();
-            tool01Outline.enabled = false;
         }
         else if (textPanel.CurrentPageIndex < 2)
         {
@@ -85,9 +92,23 @@ public class FlowManager : MonoBehaviour
         }
     }
 
-    public void FinishTask02()
+    public void FinishToolboxTask()
     {
         if (textPanel.CurrentPageIndex == 3)
+        {
+            textPanel.NextPage();
+            SpawnParticles();
+            tool01Outline.enabled = false;
+        }
+        else if (textPanel.CurrentPageIndex < 3)
+        {
+            tool01.transform.position = tool01StartPos;
+        }
+    }
+
+    public void FinishTeleportationTask()
+    {
+        if (textPanel.CurrentPageIndex == 4)
         {
             teleportTarget.SetActive(false);
             textPanel.NextPage();
@@ -95,9 +116,9 @@ public class FlowManager : MonoBehaviour
         }
     }
 
-    public void FinishTask03()
+    public void FinishSnappingTask()
     {
-        if(textPanel.CurrentPageIndex == 4)
+        if(textPanel.CurrentPageIndex == 5)
         {
             sawHologramRenderer.enabled=false;
             textPanel.NextPage();
@@ -105,15 +126,25 @@ public class FlowManager : MonoBehaviour
         }       
     }
 
-    public void FinishTask04()
+    public void FinishOpenDrawerTask()
     {
-        if (textPanel.CurrentPageIndex == 5)
+        if (textPanel.CurrentPageIndex == 6)
+        {           
+            sawOutline.enabled=false;
+            textPanel.NextPage();
+            SpawnParticles();
+        }
+    }
+
+    public void FinishHammerTask()
+    {
+        if (textPanel.CurrentPageIndex == 7)
         {
             textPanel.NextPage();
             SpawnParticles();
             hammerOutline.enabled = false;
         }
-        else if (textPanel.CurrentPageIndex < 5)
+        else if (textPanel.CurrentPageIndex < 7)
         {
             hammer.transform.position = hammerStartPos;
         }
