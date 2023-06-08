@@ -36,7 +36,7 @@ public class Respawn : MonoBehaviour
 
     IEnumerator RespawnObject()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         this.transform.position = _startPosition;
         this.transform.rotation = _startRotation;
         objectRespawned.Invoke();

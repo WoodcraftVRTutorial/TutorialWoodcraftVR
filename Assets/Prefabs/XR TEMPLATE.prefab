@@ -2599,7 +2599,7 @@ GameObject:
   - component: {fileID: 7989673570859156162}
   m_Layer: 0
   m_Name: XR Origin
-  m_TagString: Untagged
+  m_TagString: Rig
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4274,6 +4274,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -6.183
       objectReference: {fileID: 0}
+    - target: {fileID: 9057127279975357876, guid: 9d10e4b5af3dd674197287b09dba1e03,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d10e4b5af3dd674197287b09dba1e03, type: 3}
 --- !u!4 &2440480215185126961 stripped
@@ -5081,6 +5086,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -6.184
+      objectReference: {fileID: 0}
+    - target: {fileID: 9057127279975357876, guid: 9d10e4b5af3dd674197287b09dba1e03,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d10e4b5af3dd674197287b09dba1e03, type: 3}
