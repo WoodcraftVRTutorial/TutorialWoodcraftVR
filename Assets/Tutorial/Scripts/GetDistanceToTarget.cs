@@ -13,7 +13,6 @@ public class GetDistanceToTarget : MonoBehaviour
         if (_target != null)
         {
             _distance = Vector3.Distance(transform.position, _target.position);
-            Debug.Log($"Distance: {_distance} m");
         }
     }
 
