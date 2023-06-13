@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DistanceCalculator : MonoBehaviour
 {
-    [SerializeField] private Transform _target;
+    [SerializeField] private Transform _target = null;
     private float _distance;
 
     public void SetTarget(Transform targetTransform)
@@ -17,18 +17,26 @@ public class DistanceCalculator : MonoBehaviour
         if (_target != null)
         {
             _distance = Vector3.Distance(transform.position, _target.position);
+            return _distance;
         }
-        return _distance;
+        else
+        {
+            return -1;
+        }
     }
 
     public float CalculateDistance(Transform targetTransform)
     {
         _target = targetTransform;
-
+        
         if (_target != null)
         {
             _distance = Vector3.Distance(transform.position, _target.position);
+            return _distance;
         }
-        return _distance;
+        else
+        {
+            return -1;
+        }
     }
 }
