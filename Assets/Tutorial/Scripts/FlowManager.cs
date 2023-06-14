@@ -12,6 +12,7 @@ public class FlowManager : MonoBehaviour
 {
     [SerializeField] CheckTrigger trigger;
     [SerializeField] NormalTextPanel textPanel;
+    [SerializeField] NormalTextPanel sidePanel;
     [SerializeField] GameObject tool01;
     [SerializeField] GameObject saw;
     [SerializeField] GameObject hammer;
@@ -34,6 +35,8 @@ public class FlowManager : MonoBehaviour
 
     private void Awake()
     {
+        sidePanel.enabled = false;
+        
         tool01StartPos = tool01.transform.position;
         tool01StartPos.y += 0.1f;
         tool01.TryGetComponent<Outline>(out tool01Outline);
@@ -69,7 +72,7 @@ public class FlowManager : MonoBehaviour
                 teleportTarget.SetActive(true);
                 break;
             case 5:
-                sawHologramRenderer.enabled = true;
+                sawHologramRenderer.enabled = true;             
                 break;
             case 6:  
                 sawOutline.enabled = true;
@@ -110,6 +113,7 @@ public class FlowManager : MonoBehaviour
         {
             teleportTarget.SetActive(false);
             textPanel.NextPage();
+            sidePanel.enabled = true;
             SpawnParticles();
         }
     }
@@ -120,6 +124,7 @@ public class FlowManager : MonoBehaviour
         {
             sawHologramRenderer.enabled=false;
             textPanel.NextPage();
+            sidePanel.NextPage();
             SpawnParticles();
         }       
     }
