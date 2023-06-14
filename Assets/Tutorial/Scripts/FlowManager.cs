@@ -19,6 +19,7 @@ public class FlowManager : MonoBehaviour
     [SerializeField] GameObject particlePrefab;
     [SerializeField] GameObject particleSpawnPoint;
     [SerializeField] GameObject teleportTarget;
+    [SerializeField] GameObject teleportTarget2;
     [SerializeField] GameObject sawHologram;
     MeshRenderer sawHologramRenderer;
     [SerializeField] SawTask sawBlade;
@@ -78,6 +79,7 @@ public class FlowManager : MonoBehaviour
                 sawOutline.enabled = true;
                 break;
             case 7:
+                teleportTarget2.SetActive(true);
                 hammerOutline.enabled = true;
                 break;
         }
@@ -146,6 +148,7 @@ public class FlowManager : MonoBehaviour
             textPanel.NextPage();
             SpawnParticles();
             hammerOutline.enabled = false;
+            teleportTarget2.SetActive(false);
         }
         else if (textPanel.CurrentPageIndex < 7)
         {
