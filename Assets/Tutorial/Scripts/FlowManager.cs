@@ -21,6 +21,7 @@ public class FlowManager : MonoBehaviour
     [SerializeField] GameObject sawHologram;
     MeshRenderer sawHologramRenderer;
     [SerializeField] SawTask sawBlade;
+    [SerializeField] DistanceIndicator distIndicator;
 
     private Vector3 tool01StartPos;
     private Outline tool01Outline;
@@ -29,7 +30,6 @@ public class FlowManager : MonoBehaviour
 
     private Vector3 hammerStartPos;
     private Outline hammerOutline;
-
 
 
     private void Awake()
@@ -61,6 +61,7 @@ public class FlowManager : MonoBehaviour
                 break;
             case 2:
                 tool01Outline.enabled = true;
+                distIndicator.Calculator.SetTarget(tool01.transform);
                 break;
             case 3:             
                 break;
@@ -95,6 +96,7 @@ public class FlowManager : MonoBehaviour
             textPanel.NextPage();
             SpawnParticles();
             tool01Outline.enabled = false;
+            distIndicator.Calculator.SetTarget(null);
         }
         else if (textPanel.CurrentPageIndex < 3)
         {
