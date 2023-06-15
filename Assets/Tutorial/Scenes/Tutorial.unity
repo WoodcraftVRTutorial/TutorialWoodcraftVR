@@ -367,6 +367,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kamer (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 9029877636880792370, guid: 3afba916937f31f4d955dd0da3db8807,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9029877636880792370, guid: 3afba916937f31f4d955dd0da3db8807,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -8771166627424403242, guid: d560946202ccc1443a2258111ddd53f4,
+        type: 3}
+    - target: {fileID: 9029877636880792370, guid: 3afba916937f31f4d955dd0da3db8807,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0a0257ab3a2fb2349a1c75bca4a55a7f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3afba916937f31f4d955dd0da3db8807, type: 3}
 --- !u!1001 &255804865
@@ -922,6 +938,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 529314534880721384, guid: a6144ccb2efdff14d99e858597a73242,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae4a6658e8f6a3e42ba15afd11c7aec2, type: 2}
     - target: {fileID: 814764101238658768, guid: a6144ccb2efdff14d99e858597a73242,
         type: 3}
       propertyPath: m_RootOrder
@@ -982,6 +1003,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR TEMPLATE
       objectReference: {fileID: 0}
+    - target: {fileID: 8703920693632407419, guid: a6144ccb2efdff14d99e858597a73242,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae4a6658e8f6a3e42ba15afd11c7aec2, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6144ccb2efdff14d99e858597a73242, type: 3}
 --- !u!1001 &556310348

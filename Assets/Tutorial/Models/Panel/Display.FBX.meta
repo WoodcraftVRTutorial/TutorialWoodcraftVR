@@ -1,46 +1,9 @@
 fileFormatVersion: 2
-guid: fadd421882c56c645814a8dd64da6f06
+guid: 7e53023490badff42a1e173166cb8753
 ModelImporter:
   serializedVersion: 21202
-  internalIDToNameTable:
-  - first:
-      74: -7450802060273366706
-    second: upper_drawer|bottom_drawerOPEN
-  - first:
-      74: 8466042093976110961
-    second: upper_drawer|middle_drawerOPEN
-  - first:
-      74: -5596100138656981280
-    second: upper_drawer|upper_drawerOPEN
-  - first:
-      74: 7328479428061003133
-    second: middle_drawer|bottom_drawerOPEN
-  - first:
-      74: -3996853086623412160
-    second: middle_drawer|middle_drawerOPEN
-  - first:
-      74: -8757357673616485230
-    second: middle_drawer|upper_drawerOPEN
-  - first:
-      74: -5979373607804934172
-    second: bottom_drawer|bottom_drawerOPEN
-  - first:
-      74: 1317507505595080717
-    second: bottom_drawer|middle_drawerOPEN
-  - first:
-      74: -3283807997950869520
-    second: bottom_drawer|upper_drawerOPEN
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: body
-    second: {fileID: 2100000, guid: bb41823edc154634f9ddf2546b008d5e, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: drawer
-    second: {fileID: 2100000, guid: 6cd9b327afade5b41bd043c676b202e2, type: 2}
+  internalIDToNameTable: []
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
