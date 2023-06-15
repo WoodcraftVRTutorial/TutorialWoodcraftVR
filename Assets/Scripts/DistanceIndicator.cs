@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEditor.XR.Management;
-using static UnityEngine.GraphicsBuffer;
 
 [RequireComponent(typeof(DistanceCalculator))]
 public class DistanceIndicator : MonoBehaviour
@@ -22,9 +20,11 @@ public class DistanceIndicator : MonoBehaviour
     void Update()
     {
         float distance = Calculator.CalculateDistance();
+        distance = Mathf.Round(distance * 100)/100;
+
         if(distance >= 0)
         {
-            TxtDistance.text = distance.ToString();
+            TxtDistance.text = $"{distance} m";
         }
         else
         {
